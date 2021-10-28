@@ -9,11 +9,13 @@ Express, jest, dotenv, supertest, nodemon, pg, sequelize, sequelize-cli, sqlite3
 Being able to login is great. But controlling access at a more granular level is vital to creating a scalable system. In this lab, you will implement Role Based Access Control (RBAC) using an Access Control List (ACL), allowing to not only restrict access to routes for valid users, but also based on the individual permissions we give each user.
 
 ## Links to application deployment
-signin: https://auth-bearer-anthony-morton.herokuapp.com/signin
-signup: https://auth-bearer-anthony-morton.herokuapp.com/signup
-secret: https://auth-bearer-anthony-morton.herokuapp.com/secret
-pull: https://github.com/anthonylouismorton/bearer-auth/pull/2
-actions: https://github.com/anthonylouismorton/bearer-auth/actions
+signin: https://auth-api-anthony-morton.herokuapp.com/signin
+signup: https://auth-api-anthony-morton.herokuapp.com/signup
+users: https://auth-api-anthony-morton.herokuapp.com/food
+secret: https://auth-api-anthony-morton.herokuapp.com/secret
+clothes: https://auth-api-anthony-morton.herokuapp.com/clothes
+pull: https://github.com/anthonylouismorton/auth-api/pull/5
+actions: https://github.com/anthonylouismorton/auth-api/actions
 
 ## Include embedded UML
 ![uml](./crudflow.png)
