@@ -1,10 +1,10 @@
 'use strict';
 
-const middleware = require('../src/auth/middleware/basic.js');
-const { db, users } = require('../src/auth/models/index.js');
+const middleware = require('../lib/middleware/basic.js');
+const { db, users } = require('../lib/models/index.js');
 
 let userInfo = {
-  admin: { username: 'admin-basic', password: 'password' },
+  admin: { username: 'admin', password: 'password' },
 };
 
 // Pre-load our database with fake users

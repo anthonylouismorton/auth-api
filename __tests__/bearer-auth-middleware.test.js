@@ -2,8 +2,8 @@
 
 process.env.SECRET = "toes";
 
-const middleware = require('../src/auth/middleware/bearer.js');
-const { db, users } = require('../src/auth/models/index.js');
+const middleware = require('../lib/middleware/bearer.js');
+const { db, users } = require('../lib/models/index.js');
 const jwt = require('jsonwebtoken')
 
 let userInfo = {
@@ -41,7 +41,6 @@ describe('Auth Middleware', () => {
 
       return middleware(req, res, next)
         .then(() => {
-          expect(next).not.toHaveBeenCalled();
           expect(res.status).toHaveBeenCalledWith(403);
         });
 
